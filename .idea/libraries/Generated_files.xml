@@ -1,0 +1,40 @@
+<component name="libraryTable">
+  <library name="Generated files" type="javaScript">
+    <properties>
+      <sourceFilesUrls>
+        <item url="file://$PROJECT_DIR$/js/jquery.nivo.slider.min.js" />
+        <item url="file://$PROJECT_DIR$/js/map.min.min.min.js" />
+        <item url="file://$PROJECT_DIR$/js/map.min.js" />
+        <item url="file://$PROJECT_DIR$/js/bootlint.min.js" />
+        <item url="file://$PROJECT_DIR$/js/bootstrap.min.js" />
+        <item url="file://$PROJECT_DIR$/js/bootlint.min.min.js" />
+        <item url="file://$PROJECT_DIR$/js/index.min.js" />
+      </sourceFilesUrls>
+    </properties>
+    <CLASSES>
+      <root url="file://$PROJECT_DIR$/js/sidebarEffects.min.js" />
+      <root url="file://$PROJECT_DIR$/js/classie.min.js" />
+      <root url="file://$PROJECT_DIR$/js/jquery.nivo.slider.pack.min.js" />
+      <root url="file://$PROJECT_DIR$/js/sidebarEffects.min.js" />
+      <root url="file://$PROJECT_DIR$/js/classie.min.js" />
+      <root url="file://$PROJECT_DIR$/js/jquery.nivo.slider.pack.min.js" />
+      <root url="file://$PROJECT_DIR$/../宏和网站/lib/bootstrap/js/npm.min.js" />
+      <root url="file://$PROJECT_DIR$/../宏和网站/lib/bootstrap/js/bootstrap.min.min.js" />
+      <root url="file://$PROJECT_DIR$/../宏和网站/js/denglu.min.js" />
+      <root url="file://$PROJECT_DIR$/../宏和网站/js/jquery.superslide.2.1.1.min.js" />
+      <root url="file://$PROJECT_DIR$/../宏和网站/js/formCheck.min.js" />
+      <root url="file://$PROJECT_DIR$/../宏和网站/js/jquery.min.js" />
+      <root url="file://$PROJECT_DIR$/../宏和网站/js/jquery1.42.min.min.js" />
+      <root url="file://$PROJECT_DIR$/../宏和网站/lib/bootstrap/js/bootstrap.min.js" />
+      <root url="file://$PROJECT_DIR$/js/map.min.min.min.js" />
+      <root url="file://$PROJECT_DIR$/js/jquery.nivo.slider.min.js" />
+      <root url="file://$PROJECT_DIR$/js/map.min.min.min.js" />
+      <root url="file://$PROJECT_DIR$/js/map.min.js" />
+      <root url="file://$PROJECT_DIR$/js/bootlint.min.js" />
+      <root url="file://$PROJECT_DIR$/js/bootstrap.min.js" />
+      <root url="file://$PROJECT_DIR$/js/bootlint.min.min.js" />
+      <root url="file://$PROJECT_DIR$/js/index.min.js" />
+    </CLASSES>
+    <SOURCES />
+  </library>
+</component>
