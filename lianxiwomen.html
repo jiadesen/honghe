@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <title>宏和-联系我们</title>
+    <link rel="icon" href="img/logo.ico" type="image/x-icon">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/nivo-slider.min.css">
     <link rel="stylesheet" href="css/index.css">
@@ -13,7 +14,7 @@
     <script src="js/respond.min.js"></script>
     <![endif]-->
 </head>
-<body>
+<body class="body-bg">
 <!--页头-->
 <div class="navbar navbar-default header">
     <div class="container">
@@ -83,21 +84,19 @@
                 <li><a data-toggle="tab" href="#liuyan">留言板</a></li>
             </ul>
         </div>
-        <div class="col-md-10 col-xs-9 no-padding md-no-padding">
+        <div class="col-md-10 col-xs-9 no-padding md-no-padding min-height">
             <ul class="breadcrumb bread-crumb">
                 <li><a href="index.html">首页</a></li>
                 <li>&gt;</li>
                 <li><a href="lianxiwomen.html">联系我们</a></li>
                 <li>&gt;</li>
-                <li class="active">联系方式</li>
+                <li class="active fixed-width">联系方式</li>
                 <p>联系方式</p>
             </ul>
             <div class="tab-content fangan">
                 <div class="tab-pane active" id="fangshi">
                     <div class="row main-con">
-
                         <div id="maps" class="col-sm-7 col-xs-12"></div>
-
                         <div class="col-sm-5 col-xs-12 lxwm-info">
                             <p class="lxwm-info1">公司名称：珠海宏和供应链服务有限公司</p>
                             <p class="lxwm-info2">公司地址：佛山市顺德区容桂镇文明西路42号</p>
@@ -108,31 +107,33 @@
                     </div>
                 </div>
                 <div class="tab-pane main main-wh" id="liuyan">
-                    <form action="">
-                        <div class="form-group">
-                            <label for="name">您的姓名：</label>
-                            <input class="form-control" type="text" id="name"/>
-                        </div>
-                        <div class="form-group">
-                            <label for="industry">您所在的行业：</label>
-                            <input class="form-control" type="text" id="industry"/>
-                        </div>
-                        <div class="form-group">
-                            <label for="phone">您的联系电话：</label>
-                            <input class="form-control" type="text" id="phone"/>
-                        </div>
-                        <div class="form-group">
-                            <label for="email">您的邮箱：</label>
-                            <input class="form-control" type="text" id="email"/>
-                        </div>
-                        <div class="form-group">
-                            <label for="option">您的宝贵意见或建议：</label>
-                            <textarea class="form-control" name="" id="option" cols="30" rows="3"></textarea>
-                        </div>
-                        <div class="form-group">
-                            <input class="btn btn-success" type="button" value="提交" style="width: 40%;"/>
-                        </div>
-                    </form>
+                    <div class="main-con">
+                        <form action="">
+                            <div class="form-group">
+                                <label for="name">您的姓名：</label>
+                                <input class="form-control" type="text" id="name"/>
+                            </div>
+                            <div class="form-group">
+                                <label for="industry">您所在的行业：</label>
+                                <input class="form-control" type="text" id="industry"/>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">您的联系电话：</label>
+                                <input class="form-control" type="text" id="phone"/>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">您的邮箱：</label>
+                                <input class="form-control" type="text" id="email"/>
+                            </div>
+                            <div class="form-group">
+                                <label for="option">您的宝贵意见或建议：</label>
+                                <textarea class="form-control" name="" id="option" cols="30" rows="3"></textarea>
+                            </div>
+                            <div class="form-group">
+                                <input class="btn btn-success" type="button" value="提交" style="width: 40%;"/>
+                            </div>
+                        </form>
+                    </div>
                 </div>
             </div>
         </div>
@@ -148,7 +149,8 @@
                 <option value="http://www.baidu.com">百度</option>
             </select>
             <label for="partner">集团成员:</label>
-            <select id="partner" class="select" name="select" onchange="self.location.href=options[selectedIndex].value">
+            <select id="partner" class="select" name="select"
+                    onchange="self.location.href=options[selectedIndex].value">
                 <option value="none">-请选择-</option>
                 <option value="http://www.baidu.com">百度</option>
                 <option value="http://www.baidu.com">百度</option>
@@ -180,14 +182,14 @@
 <script src="js/map.min.js"></script>
 <script>
     /*使用Bootlint检查HTML/CSS错误*/
-//    (function () {
-//        var s = document.createElement("script");
-//        s.onload = function () {
-//            bootlint.showLintReportForCurrentDocument([]);
-//        };
-//        s.src = "js/bootlint.js";
-//        document.body.appendChild(s)
-//    })();
+    //    (function () {
+    //        var s = document.createElement("script");
+    //        s.onload = function () {
+    //            bootlint.showLintReportForCurrentDocument([]);
+    //        };
+    //        s.src = "js/bootlint.js";
+    //        document.body.appendChild(s)
+    //    })();
 </script>
 </body>
 </html>
