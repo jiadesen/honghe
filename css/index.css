@@ -145,6 +145,7 @@ a {
 
 .login img {
     width: 100%;
+    /*height: 810px;*/
 }
 
 .login a,
@@ -157,12 +158,14 @@ a {
     outline: none;
 }
 
-.login .login-btn {
-    top: 65%;
-    left: 11%;
+body.rel {
+    position: relative;
 }
 
-.modal-dialog {
+.login-box {
+    position: absolute;
+    top: 30%;
+    left: 55%;
     width: 420px;
 }
 
@@ -243,7 +246,7 @@ a {
 /*PC屏幕专用样式*/
 @media screen and (min-width: 992px) {
     .header {
-        height: 116px;
+        height: 80px;
     }
 
     .container {
@@ -252,19 +255,19 @@ a {
 
     .navbar-brand {
         width: 281px \9;
-        height: 93px \9;
+        height: 63px \9;
     }
 
     .navbar-brand img {
         width: 281px \9;
-        height: 93px \9;
+        height: 63px \9;
         width: 100%;
-        margin-top: 8px;
+        /*margin-top: 8px;*/
     }
 
     #menu > ul {
         float: right;
-        height: 116px;
+        height: 80px;
         -ms-flex-align: center;
         -webkit-box-align: center;
         align-items: center;
@@ -292,7 +295,7 @@ a {
     }
 
     ul.ie-8 {
-        padding-top: 30px \9;
+        padding-top: 15px \9;
     }
 
     .bg-index {
@@ -358,7 +361,7 @@ a {
         content: '';
         display: block;
         width: 100%;
-        padding-top: 15px;
+        /*padding-top: 15px;*/
         border-bottom: 2px solid #cacaca;
         border-bottom: 2px solid #70BB3A \9;
         position: relative;
@@ -474,7 +477,7 @@ a {
 
     #menu > ul {
         float: right;
-        height: 90px;
+        height: 80px;
         -ms-flex-align: center;
         -webkit-box-align: center;
         align-items: center;
@@ -638,17 +641,22 @@ a {
         top: 65%;
         left: 11%;
     }
+
+    .login img {
+        width: 100%;
+        height: 430px;
+    }
 }
 
 /*PHONE屏幕专用样式*/
 @media screen and (max-width: 768px) {
     .header {
-        height: 90px;
+        height: 80px;
     }
 
     .navbar-header {
         border: none;
-        height: 90px;
+        height: 80px;
     }
 
     .navbar-brand img {
@@ -785,7 +793,7 @@ a {
     /*联系我们*/
     /*地图*/
     #maps {
-        height: 160px;
+        height: 230px;
     }
 
     #liuyan {
@@ -826,7 +834,7 @@ a {
         left: 12%;
     }
 
-    .modal-dialog {
+    .login-box {
         width: 270px;
     }
 
@@ -912,6 +920,17 @@ a {
         position: relative;
         top: 3px;
     }
+
+    /*登录*/
+    .login img {
+        height: 330px;
+    }
+
+    .login-box {
+        top: 25%;
+        left: 13%;
+        width: 268px;
+    }
 }
 
 .main {
@@ -926,7 +945,7 @@ a {
 
 .main .main-con div {
     text-align: center;
-    padding: 10px 20px;
+    padding: 10px 10px;
 }
 
 .main .main-con div a {
@@ -983,6 +1002,7 @@ a {
     padding: 0;
     color: #666;
     font-size: 1.1em;
+    margin-bottom: 5px;
 }
 
 .main-link {
@@ -1134,7 +1154,7 @@ a {
 }
 
 .about p {
-    line-height: 25px;
+    /*line-height: 25px;*/
     margin: 0;
 }
 
