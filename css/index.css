@@ -1,7 +1,21 @@
 body {
     min-width: 280px;
     font-family: "microsoft yahei", Arial, sans-serif;
-    background: #eee;
+    background: #f5f5f5;
+}
+
+.body-bg {
+    background: center no-repeat;
+    background-size: cover;
+}
+
+.body-bg {
+    background-image: url("../img/bg.jpg");
+}
+
+.bg-index {
+    background: center no-repeat;
+    background-size: cover;
 }
 
 .clear-float {
@@ -16,6 +30,53 @@ ul {
 
 a {
     text-decoration: none;
+}
+
+/*动画*/
+@-webkit-keyframes rotate {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    25% {
+        -webkit-transform: rotate(90deg);
+        transform: rotate(90deg);
+    }
+    50% {
+        -webkit-transform: rotate(180deg);
+        transform: rotate(180deg);
+    }
+    75% {
+        -webkit-transform: rotate(270deg);
+        transform: rotate(270deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes rotate {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    25% {
+        -webkit-transform: rotate(90deg);
+        transform: rotate(90deg);
+    }
+    50% {
+        -webkit-transform: rotate(180deg);
+        transform: rotate(180deg);
+    }
+    75% {
+        -webkit-transform: rotate(270deg);
+        transform: rotate(270deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
 }
 
 .header {
@@ -84,6 +145,7 @@ a {
 
 .login img {
     width: 100%;
+    /*height: 810px;*/
 }
 
 .login a,
@@ -96,17 +158,14 @@ a {
     outline: none;
 }
 
-.login .register {
-    top: 65%;
-    left: 11%;
+body.rel {
+    position: relative;
 }
 
-.login .login-btn {
-    top: 65%;
-    left: 29%;
-}
-
-.modal-dialog {
+.login-box {
+    position: absolute;
+    top: 30%;
+    left: 55%;
     width: 420px;
 }
 
@@ -166,10 +225,28 @@ a {
     outline: none;
 }
 
+/*旋转*/
+.rotate-img {
+    -webkit-animation-name: rotate;
+    animation-name: rotate;
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
+    -webkit-animation-duration: 8000ms;
+    animation-duration: 8000ms;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+}
+
+.icon-part {
+    position: relative;
+    top: -47px;
+    /*left: 1px;*/
+}
+
 /*PC屏幕专用样式*/
 @media screen and (min-width: 992px) {
     .header {
-        height: 116px;
+        height: 80px;
     }
 
     .container {
@@ -178,19 +255,19 @@ a {
 
     .navbar-brand {
         width: 281px \9;
-        height: 93px \9;
+        height: 63px \9;
     }
 
     .navbar-brand img {
         width: 281px \9;
-        height: 93px \9;
+        height: 63px \9;
         width: 100%;
-        margin-top: 8px;
+        /*margin-top: 8px;*/
     }
 
     #menu > ul {
         float: right;
-        height: 116px;
+        height: 80px;
         -ms-flex-align: center;
         -webkit-box-align: center;
         align-items: center;
@@ -218,7 +295,11 @@ a {
     }
 
     ul.ie-8 {
-        padding-top: 30px \9;
+        padding-top: 15px \9;
+    }
+
+    .bg-index {
+        background-image: url("../img/bg-index.jpg");
     }
 
     /*关于我们*/
@@ -251,7 +332,7 @@ a {
 
     /*项目方案*/
     .main-con {
-        min-height: 600px;
+        min-height: 650px;
         margin: 0;
     }
 
@@ -270,6 +351,72 @@ a {
 
     .bread-crumb p {
         display: none;
+    }
+
+    .pc-hidden {
+        cursor: pointer;
+    }
+
+    .pc-hidden h4:before {
+        content: '';
+        display: block;
+        width: 100%;
+        /*padding-top: 15px;*/
+        border-bottom: 2px solid #cacaca;
+        border-bottom: 2px solid #70BB3A \9;
+        position: relative;
+        z-index: 100;
+        top: 36px;
+        -webkit-transition: .3s ease-in-out;
+        transition: .3s ease-in-out;
+    }
+
+    .pc-hidden h4:after {
+        content: '';
+        display: block;
+        width: 0;
+        padding-top: 15px;
+        border-bottom: 2px solid #70BB3A;
+        -webkit-transition: .3s ease-in-out;
+        transition: .3s ease-in-out;
+        position: relative;
+        z-index: 500;
+    }
+
+    .pc-hidden h5,
+    .pc-hidden p {
+        opacity: 0;
+        -webkit-transition: .3s ease-in-out;
+        transition: .3s ease-in-out;
+    }
+
+    .pc-hidden:hover h4:after {
+        width: 100%;
+        width: 0 \9;
+        -webkit-transition: .3s ease-in-out;
+        transition: .3s ease-in-out;
+    }
+
+    /*.pc-hidden:hover h4:before {*/
+    /*width: 0;*/
+    /*transition: .3s ease-in-out;*/
+    /*}*/
+    .pc-hidden:hover h5,
+    .pc-hidden:hover p {
+        opacity: 1;
+        -webkit-transition: .3s ease-in-out;
+        transition: .3s ease-in-out;
+    }
+
+    /*IE8*/
+    .pc-hidden h5,
+    .pc-hidden p {
+        display: none \9;
+    }
+
+    .pc-hidden:hover h5,
+    .pc-hidden:hover p {
+        display: block \9;
     }
 
     /*新闻中心*/
@@ -304,13 +451,18 @@ a {
 }
 
 /*PAD屏幕专用样式*/
-@media screen and (min-width: 768px) and (max-width: 991px) {
+@media screen and (min-width: 768px) and (max-width: 992px) {
     .header {
         height: 100px;
     }
 
     .container {
         width: 100%;
+    }
+
+    .navbar-header .img-responsive {
+        position: relative;
+        z-index: 2000;
     }
 
     .navbar-brand img {
@@ -325,7 +477,7 @@ a {
 
     #menu > ul {
         float: right;
-        height: 100px;
+        height: 80px;
         -ms-flex-align: center;
         -webkit-box-align: center;
         align-items: center;
@@ -336,6 +488,7 @@ a {
 
     #menu > ul > li {
         width: 75px;
+        height: 34px;
         text-align: center;
     }
 
@@ -366,6 +519,10 @@ a {
         display: block;
         -webkit-transition: all 1s linear;
         transition: all 1s linear;
+    }
+
+    .bg-index {
+        background-image: url("../img/bg-index.jpg");
     }
 
     /*关于我们*/
@@ -434,7 +591,11 @@ a {
     }
 
     .fangan-div-height > div {
-        min-height: 285px;
+        min-height: 287px;
+    }
+
+    #tedian h4 {
+        border-bottom: 2px solid #70BB3A;
     }
 
     /*联系我们*/
@@ -475,17 +636,27 @@ a {
         font-weight: bold;
         line-height: 26px;
     }
+
+    .login .login-btn {
+        top: 65%;
+        left: 11%;
+    }
+
+    .login img {
+        width: 100%;
+        height: 430px;
+    }
 }
 
 /*PHONE屏幕专用样式*/
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 768px) {
     .header {
-        height: 90px;
+        height: 80px;
     }
 
     .navbar-header {
         border: none;
-        height: 90px;
+        height: 80px;
     }
 
     .navbar-brand img {
@@ -535,6 +706,10 @@ a {
 
     .sub-nav {
         display: none;
+    }
+
+    .bg-index {
+        background-image: url("../img/bg-phone.jpg");
     }
 
     /*关于我们*/
@@ -602,6 +777,11 @@ a {
         font-size: .9em;
     }
 
+    /*项目方案*/
+    #tedian h4 {
+        border-bottom: 2px solid #70BB3A;
+    }
+
     /*新闻中心*/
     #xinwen li,
     #zixun li {
@@ -613,7 +793,7 @@ a {
     /*联系我们*/
     /*地图*/
     #maps {
-        height: 160px;
+        height: 230px;
     }
 
     #liuyan {
@@ -623,12 +803,12 @@ a {
     /*登录页*/
     .login a,
     .login button {
-        width: 40px;
-        height: 18px;
+        width: 50px;
+        height: 20px;
         font-size: .5em;
         border: 1px solid #008000;
         border-radius: 2px;
-        line-height: 16px;
+        line-height: 18px;
     }
 
     /*登录页模态框手机端调整*/
@@ -649,17 +829,12 @@ a {
         text-decoration: none;
     }
 
-    .login .register {
-        top: 65%;
-        left: 11%;
-    }
-
     .login .login-btn {
         top: 65%;
-        left: 29%;
+        left: 12%;
     }
 
-    .modal-dialog {
+    .login-box {
         width: 270px;
     }
 
@@ -745,6 +920,17 @@ a {
         position: relative;
         top: 3px;
     }
+
+    /*登录*/
+    .login img {
+        height: 330px;
+    }
+
+    .login-box {
+        top: 25%;
+        left: 13%;
+        width: 268px;
+    }
 }
 
 .main {
@@ -759,7 +945,7 @@ a {
 
 .main .main-con div {
     text-align: center;
-    padding: 10px 20px;
+    padding: 10px 10px;
 }
 
 .main .main-con div a {
@@ -813,8 +999,10 @@ a {
 }
 
 .main .main-con div p {
-    padding: 0 10px;
+    padding: 0;
     color: #666;
+    font-size: 1.1em;
+    margin-bottom: 5px;
 }
 
 .main-link {
@@ -965,10 +1153,16 @@ a {
     color: #666;
 }
 
+.about p {
+    /*line-height: 25px;*/
+    margin: 0;
+}
+
 /*项目方案*/
 .fangan {
     /*padding: 0;*/
     color: #666;
+    min-height: 650px;
 }
 
 #chanpin h4 {
@@ -982,7 +1176,7 @@ a {
 }
 
 #tedian h4 {
-    border-bottom: 2px solid #70BB3A;
+    /*border-bottom: 2px solid #70BB3A;*/
     padding-bottom: 7px;
 }
 
@@ -994,6 +1188,7 @@ a {
     line-height: 25px;
     margin: 0;
     padding: 0;
+    font-size: 1.1em;
 }
 
 /*新闻中心*/
@@ -1056,4 +1251,12 @@ a {
 
 #liuyan label {
     float: left;
+}
+
+.min-height {
+    min-height: 750px;
+}
+
+.fixed-width {
+    width: 90px;
 }
