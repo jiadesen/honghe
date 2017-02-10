@@ -8,9 +8,6 @@
 //     pauseTime: 3000, //暂停时间
 //     directionNav: false, //不使用左右导航
 // });
-$(window).load(function () {
-    $('#slider').nivoSlider({});
-});
 
 //面包屑更新
 $(document).ready(function () {

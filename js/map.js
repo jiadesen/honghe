@@ -5,7 +5,7 @@ $(function () {
     var map = new BMap.Map("maps");
 
     // 2、设置中心点坐标和缩放比例
-    var oPoint=new BMap.Point(113.287036, 22.760993);
+    var oPoint=new BMap.Point(113.277765, 22.763859);
     map.centerAndZoom(oPoint, 15);
     // 3、添加标注
     var marker = new BMap.Marker(oPoint);   // 创建标注
