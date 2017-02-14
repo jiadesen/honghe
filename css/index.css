@@ -209,11 +209,11 @@ body.rel {
 }
 
 .checkbox input {
-    width: 26px;
-    height: 26px;
+    width: 18px;
+    height: 18px;
     position: relative;
-    left: 5px;
-    top: 2px;
+    left: 8px;
+    top: 6px;
 }
 
 .submit {
@@ -221,7 +221,6 @@ body.rel {
     height: 37px;
     border: 1px solid #2EA13A;
     border-radius: 3px;
-    /*background-image: url("../img/denglu_btn.png");*/
     color: #2EA13A;
     font-size: 1.2em;
     outline: none;
