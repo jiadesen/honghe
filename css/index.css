@@ -434,6 +434,32 @@ a {
         display: block \9;
     }
 
+    /*项目方案-产品介绍*/
+    #pro {
+        padding-bottom: 10px;
+    }
+
+    #pro img {
+        width: 100%;
+    }
+
+    #pro div.chanpin-img {
+        padding-top: 25px;
+    }
+
+    #pro div.chanpin-img p {
+        padding-bottom: 3px;
+        font-family: KaiTi;
+        color: #222;
+        font-size: 1.1em;
+        /*text-align: center;*/
+    }
+
+    #pro div.chanpin-img p.black {
+        font-weight: bold;
+        color: #111;
+    }
+
     /*新闻中心*/
     #xinwen li,
     #zixun li {
@@ -629,6 +655,31 @@ a {
         border-bottom: 2px solid #70BB3A;
     }
 
+    /*项目方案-产品介绍*/
+    #pro {
+        padding: 20px 0;
+    }
+
+    #pro img {
+        width: 100%;
+    }
+
+    #pro div.chanpin-img {
+        padding-top: 0;
+    }
+
+    #pro div.chanpin-img p {
+        padding-bottom: 0;
+        font-family: KaiTi;
+        color: #222;
+        font-size: 1.1em;
+    }
+
+    #pro div.chanpin-img p.black {
+        font-weight: bold;
+        color: #111;
+    }
+
     /*联系我们*/
     /*地图*/
     #maps {
@@ -811,6 +862,33 @@ a {
     /*项目方案*/
     #tedian h4 {
         border-bottom: 2px solid #70BB3A;
+    }
+
+    /*项目方案-产品介绍*/
+    #pro {
+        padding: 10px 0;
+    }
+
+    #pro img {
+        width: 90%;
+    }
+
+    #pro div.chanpin-img {
+        padding-top: 0;
+        /*padding-left: 40px;*/
+    }
+
+    #pro div.chanpin-img p {
+        padding-bottom: 0;
+        font-family: KaiTi;
+        color: #222;
+        font-size: 1em;
+        line-height: 20px;
+    }
+
+    #pro div.chanpin-img p.black {
+        font-weight: bold;
+        color: #111;
     }
 
     /*新闻中心*/
