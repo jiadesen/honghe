@@ -175,8 +175,18 @@
 </div>
 <script src="js/jquery-1.11.3.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
-<script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=QL521UExnXciIzgGbVyHNCwUhHNaR1x2"></script>
 <script src="js/index.min.js"></script>
-<script src="js/map.min.js"></script>
+<script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=052a354e15c12dee180e74580ced4819"></script>
+<script>
+    $(function () {
+        var map = new BMap.Map("maps");
+        var point = new BMap.Point(113.277765, 22.763859);
+        map.centerAndZoom(point, 15);
+        var marker = new BMap.Marker(point);
+        map.addOverlay(marker);
+        marker.setAnimation(BMAP_ANIMATION_BOUNCE);
+        map.enableScrollWheelZoom(true);
+    });
+</script>
 </body>
 </html>
