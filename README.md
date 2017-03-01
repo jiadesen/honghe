@@ -7,6 +7,16 @@
 * http://1.mypro.applinzi.com (仅供展示)
 * (注：官网域名www.hhescf.com 仍在备案中，暂时无法访问)
 
+## 开发环境
+
+    windows 10 专业版 x64
+
+    Webstorm 2016.3.2(64)
+
+    XAMPP 集成软件
+
+    chrome浏览器
+
 ## 网站技术要求
 
 * 兼容IE8
